@@ -6,12 +6,12 @@ updates:
     schedule:
       interval: "monthly"
     versioning-strategy: increase-if-necessary
-    
-  - directory: /
+
+  # Updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
     open-pull-requests-limit: 5
-    package-ecosystem: "github-actions"
-    reviewers:
-      - "TUDOCK/devops"
+    target-branch: "master"
     schedule:
       interval: daily
       timezone: "Europe/Berlin"
